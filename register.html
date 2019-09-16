@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Delivery App</title>
+
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+</head>
+
+<body id="register">
+
+    <ons-card id="card_re">
+        <div class="title_re">
+            <center>
+                <img src="https://image.flaticon.com/icons/svg/1147/1147907.svg" alt="Onsen UI" style="width: 25%">
+            </center>
+            <h3>REGISTER AN ACCOUNT</h3>
+            <p>By registering an account, you accept all terms and condotions</p>
+        </div>
+
+        <div class="content">
+            <ons-list>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="list-item__center">
+                            <input type="text" class="text-input" placeholder="Full Name">
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item__center">
+                            <input type="text" class="text-input" placeholder="Email Address">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="list-item__center">
+                            <input type="text" class="text-input" placeholder="Phone Number">
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item__center">
+                            <input type="text" class="text-input" placeholder="Password">
+                        </div>
+                    </li>
+                </ul>
+            </ons-list>
+
+            <br>
+            <ons-button onclick="validate2()" modifier="large--cta" id="large--cta_re">Register</ons-button>
+
+            <div style="text-align: center">
+                <p>or</p>
+            </div>
+
+            <ons-row>
+                <ons-col width="50%">
+                    <ons-card>
+                        <center>
+                            <ons-toolbar-button onclick="validate3()" ><img src="https://image.flaticon.com/icons/svg/185/185981.svg"
+                                    alt="Onsen UI" style="width: 35%"></ons-toolbar-button>
+                        </center>
+                    </ons-card>
+                </ons-col>
+
+                <ons-col width="50%">
+                    <ons-card>
+                        <center>
+                            <ons-toolbar-button onclick="validate3()" ><img src="https://image.flaticon.com/icons/svg/270/270021.svg"
+                                    alt="Onsen UI" style="width: 35%"></ons-toolbar-button>
+                        </center>
+                    </ons-card>
+                </ons-col>
+            </ons-row>
+        </div>
+
+        <div class="more">
+            <ons-button onclick="validate2()" modifier="quiet">
+                <p>BACK...</p>
+            </ons-button>
+        </div>
+
+    </ons-card>
+
+</body>
+
+<script>
+    function validate2() {
+        window.location.href = "index.html";
+    }
+
+    function validate3() {
+        window.location.href = "foodcategory.html";
+    }
+
+</script>
+
+</html>

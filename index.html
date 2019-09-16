@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Delivery App</title>
+
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+</head>
+
+<body id="index">
+
+    <ons-card id="card">
+        <div class="title">
+            <center>
+                <img src="https://image.flaticon.com/icons/svg/1147/1147907.svg" alt="Onsen UI" style="width: 25%">
+            </center>
+            <h1>LOGIN</h1>
+            <p>Insert your email and password to login</p>
+        </div>
+
+        <div class="content">
+            <ons-list>
+                <span>
+                    <div style="padding: 4%" align='center'>
+                        <input class="text-input text-input--material" placeholder="Email" type="text" required>
+                    </div>
+                    <br />
+                    <div align='center'>
+                        <input class="text-input text-input--material" placeholder="Password" type="password" required>
+                    </div>
+                </span>
+            </ons-list>
+
+            <ons-row>
+                <ons-col class="one_index" width="60%">
+                    <br>
+                    <ons-button id="forgot" modifier="quiet">
+                        Forgot Password ??
+                    </ons-button>
+                    |
+                    <ons-button id="sing" modifier="quiet" onclick="validate1()" >
+                        Sign up
+                </ons-col>
+
+                <ons-col width="40%">
+                    <br>
+                    <ons-button modifier="large--cta" id="large--cta_login" onclick="validate()" >Login</ons-button>
+
+                </ons-col>
+            </ons-row>
+
+
+            <br>
+
+            <ons-row>
+                <ons-col width="50%">
+                    <ons-card >
+                        <center>
+                            <ons-toolbar-button onclick="validate()"><img src="https://image.flaticon.com/icons/svg/185/185981.svg"
+                                    alt="Onsen UI" style="width: 35%"></ons-toolbar-button>
+                        </center>
+                    </ons-card>
+                </ons-col>
+
+                <ons-col width="50%">
+                    <ons-card >
+                        <center>
+                            <ons-toolbar-button onclick="validate()"><img src="https://image.flaticon.com/icons/svg/270/270021.svg"
+                                    alt="Onsen UI" style="width: 35%"></ons-toolbar-button>
+                        </center>
+                    </ons-card>
+                </ons-col>
+            </ons-row>
+
+</body>
+<script>
+        function validate() {
+            window.location.href = "foodcategory.html";
+        }
+
+        function validate1() {
+            window.location.href = "register.html";
+        }
+    </script>
+
+</html>

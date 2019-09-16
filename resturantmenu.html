@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Delivery App</title>
+
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+</head>
+
+<body id="resturanmenu">
+
+    <ons-toolbar>
+        <div class="left" id="back">
+            <ons-toolbar-button onclick="validate8()" ><img src="https://image.flaticon.com/icons/svg/126/126683.svg" alt="Onsen UI"
+                    style="width: 20%"></ons-toolbar-button>
+        </div>
+        <div class="center">
+            <h1>FOODFEED</h1>
+        </div>
+    </ons-toolbar>
+
+    <ons-card id="card_menu">
+        <ons-row>
+            <ons-col class="title_menu" width="60%">
+                <center>
+                    <img src="https://image.flaticon.com/icons/svg/1322/1322321.svg" alt="Onsen UI" style="width: 20%">
+                </center>
+                <h1>The Noodle</h1>
+                <p>Min Dilivery : $25/open</p>
+            </ons-col>
+
+            <ons-col class="title_menu" width="40%">
+                <br><br>
+                <center>
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                </center>
+            </ons-col>
+        </ons-row>
+
+        <div class="start">
+            <p>STARTERS...</p>
+        </div>
+
+        <ons-row>
+            <ons-col class="one_menu" width="70%">
+                <h1>Chicken Soup</h1>
+                <p>Served with all Salad, sauce and bread</p>
+            </ons-col>
+
+            <ons-col class="one_menu" width="10%">
+                <h1>$12</h1>
+            </ons-col>
+
+            <ons-col width="20%">
+                <center>
+                    <ons-toolbar-button><img src="https://image.flaticon.com/icons/svg/660/660522.svg" alt="Onsen UI"
+                            style="width: 20%"></ons-toolbar-button>
+                </center>
+            </ons-col>
+        </ons-row>
+
+
+        <ons-row>
+            <ons-col class="two_menu" width="70%">
+                <h1>Chicken Chowmein</h1>
+                <p>Served with all Salad, sauce and bread and coke</p>
+            </ons-col>
+
+            <ons-col class="two_menu" width="10%">
+                <h1>$36</h1>
+            </ons-col>
+
+            <ons-col width="20%">
+                <center>
+                    <ons-toolbar-buttonon click="validate9()"><img src="https://image.flaticon.com/icons/svg/660/660522.svg" alt="Onsen UI"
+                            style="width: 20%"></ons-toolbar-button>
+                </center>
+            </ons-col>
+        </ons-row>
+
+        <ons-row>
+            <ons-col class="three_menu" width="70%">
+                <h1>Beef Noodles Guacmole</h1>
+                <p>Served with chips and sauce</p>
+            </ons-col>
+
+            <ons-col class="three_menu" width="10%">
+                <h1>$9</h1>
+            </ons-col>
+
+            <ons-col width="20%">
+                <center>
+                    <ons-toolbar-button><img src="https://image.flaticon.com/icons/svg/660/660522.svg" alt="Onsen UI"
+                            style="width: 20%"></ons-toolbar-button>
+                </center>
+            </ons-col>
+        </ons-row>
+
+        <div class="mains">
+            <p>MAINS...</p>
+        </div>
+
+        <ons-row>
+            <ons-col class="four_menu" width="70%">
+                <h1>The Noodle Special Sauce</h1>
+                <p>Served with all Salad, sauce and bread</p>
+            </ons-col>
+
+            <ons-col class="four_menu" width="10%">
+                <h1>$10</h1>
+            </ons-col>
+
+            <ons-col width="20%">
+                <center>
+                    <ons-toolbar-button><img src="https://image.flaticon.com/icons/svg/660/660522.svg" alt="Onsen UI"
+                            style="width: 20%"></ons-toolbar-button>
+                </center>
+            </ons-col>
+        </ons-row>
+
+
+        <ons-row>
+            <ons-col class="five_menu" width="70%">
+                <h1>The Prawn Noodle Bowl</h1>
+                <p>Served with all Salad, sauce and bread and coke</p>
+            </ons-col>
+
+            <ons-col class="five_menu" width="10%">
+                <h1>$8</h1>
+            </ons-col>
+
+            <ons-col width="20%">
+                <center>
+                    <ons-toolbar-button><img src="https://image.flaticon.com/icons/svg/660/660522.svg" alt="Onsen UI"
+                            style="width: 20%"></ons-toolbar-button>
+                </center>
+            </ons-col>
+        </ons-row>
+
+        <ons-row>
+            <ons-col class="six_menu" width="70%">
+                <h1>Honey Chicken with Fried Rice</h1>
+                <p>Served with chips and sauce</p>
+            </ons-col>
+
+            <ons-col class="six_menu" width="10%">
+                <h1>$56</h1>
+            </ons-col>
+
+            <ons-col width="20%">
+                <center>
+                    <ons-toolbar-button><img src="https://image.flaticon.com/icons/svg/660/660522.svg" alt="Onsen UI"
+                            style="width: 20%"></ons-toolbar-button>
+                </center>
+            </ons-col>
+        </ons-row>
+
+        <div style="text-align: center" class="content-padded" ng-controller="ButtonsController">
+            <ons-button id="drinks" modifier="material" style="width: 45%">
+                <ons-ripple></ons-ripple>
+
+                <ons-row>
+                    <ons-col width="90%">
+                        Drinks
+                    </ons-col>
+
+                    <ons-col width="10%">
+                            <ons-toolbar-button>+</ons-toolbar-button>
+                    </ons-col>
+                </ons-row>
+
+            </ons-button>
+
+            <ons-button id="desserts" modifier="material" style="width: 45%">
+                <ons-ripple></ons-ripple>
+
+                <ons-row>
+                    <ons-col width="90%">
+                        Desserts
+                    </ons-col>
+
+                    <ons-col width="10%">
+                            <ons-toolbar-button>+</ons-toolbar-button>
+                    </ons-col>
+                </ons-row>
+
+            </ons-button>
+        </div>
+
+    </ons-card>
+
+
+    <div class="toast toast--material">
+        <div class="toast__message toast--material__message">Your Order : $34</div>
+        <button class="toast__buttontoast--material__button" onclick="validate9()" >ORDER</button>
+    </div>
+
+
+</body>
+
+<script>
+        function validate8() {
+            window.location.href = "resturantlist.html";
+        } 
+    
+        function validate9() {
+            window.location.href = "orderconfirmation.html";
+        } 
+    </script>
+
+</html>

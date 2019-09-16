@@ -1,0 +1,435 @@
+#index{
+   background: #833ab4;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+ 
+ #card{
+     margin-top: 25%;
+ }
+
+ .title >h1 {
+    text-align: center;
+    font-family: 'Chilanka', cursive;
+    font-size: 28px;
+    color: rgb(19, 14, 14);
+ }
+
+ .title >p {
+    text-align: center;
+    font-family: 'Chilanka', cursive;
+    font-size: 15px;
+    color: rgb(126, 125, 125);
+ }
+
+ #forgot{
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   font-size: 13px;
+   color: #072a24;
+ }
+
+ #sing{
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   font-size: 13px;
+   color: #e93737; 
+ }
+
+ #large--cta_login {
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   background : #072a24;
+
+  }
+
+ #outline_login {
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   background : #0f456e;
+
+  }
+ 
+  #outline1_login {
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   background : #fe929f;
+
+  }
+
+  /* ----------------------------------------------------- */
+
+  #register{
+   background: #833ab4;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+  }
+
+  #card_re{
+    margin-top: 0%;
+}
+
+  .title_re >h3 {
+    text-align: center;
+    font-family: 'Chilanka', cursive;
+    font-size: 28px;
+    color: rgb(19, 14, 14);
+ }
+ 
+ .title_re >p {
+    text-align: center;
+    font-family: 'Chilanka', cursive;
+    font-size: 13px;
+    color: rgb(126, 125, 125);
+ }
+   
+  
+
+  #large--cta_re{
+   font-family: 'Chilanka', cursive;
+   background: #0f456e;
+  }
+
+ /* ----------------------------------------------------- */
+
+ #foodcategory{
+   background: #FF512F;
+   background: -webkit-linear-gradient(to right, #F09819, #FF512F); 
+   background: linear-gradient(to right, #F09819, #FF512F); 
+ }
+
+ #card_food{
+   font-family: 'Chilanka', cursive;
+   margin-top: 7%;
+   height: 10%;
+   width: 80%;
+
+}
+
+#back{
+   margin-top: 2%;
+}
+
+.center >h1{
+   margin-top: 1%;
+   font-family: 'Roboto', sans-serif;
+   font-size: 22px; 
+}
+
+.card__contentcard--material__content {
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   color: #050505;
+}
+
+#one {
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   color: #40d0e0;
+}
+
+#two {
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   color: #ff8c00;
+}
+
+#three {
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   color: #ff0080;
+}
+
+.more  {
+   text-align: center;
+   font-size: 20px;
+}
+
+
+#menu{
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   font-size: 20px;
+}
+
+/* ----------------------------------------------------- */
+
+#orderconfirmation{
+   background: #FF512F;
+   background: -webkit-linear-gradient(to right, #F09819, #FF512F); 
+   background: linear-gradient(to right, #F09819, #FF512F); 
+}
+
+#card_order{
+   margin-top: 12%;
+}
+
+.title_order >h1 {
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   font-size: 20px;
+   color: rgb(19, 14, 14);
+}
+
+.title_order >p {
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   font-size: 17px;
+   color: rgb(126, 125, 125);
+}
+
+#one_order {
+   font-family: 'Chilanka', cursive;
+   font-size: 18px;
+   color: #959696;
+}
+
+#two_order {
+   font-family: 'Chilanka', cursive;
+   font-size: 16px;
+   color: #40d0e0;
+}
+
+#three_order {
+   font-family: 'Chilanka', cursive;
+   font-size: 16px;
+   color: #ff8c00;
+}
+
+#four_order {
+   font-family: 'Chilanka', cursive;
+   font-size: 16px;
+   color: #ff0080;
+}
+
+#card_totle{
+   font-family: 'Chilanka', cursive;
+   font-size: 16px;
+   background: #f7f0f0;
+   height: 10%;
+}
+
+#card_enter{
+   font-family: 'Chilanka', cursive;
+   font-size: 18px;
+   height: 10%;
+}
+
+.pay >p{
+   font-family: 'Chilanka', cursive;
+   font-size: 18px;
+}
+
+#credit{
+   padding: 2%;
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   color: #000;
+   background: #77a1d3;
+}
+
+#paypal{
+   padding: 2%;
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   color: #000;
+   background: #79cbca;
+}
+
+#cash{
+   padding: 2%;
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   color: #000;
+   background: #e684ac;
+}
+
+#cancle{
+   font-size: 15px;
+   color: rgb(194, 34, 34)
+}
+
+
+/* ----------------------------------------------------- */
+
+#resturanmenu{
+   background: #FF512F;
+   background: -webkit-linear-gradient(to right, #F09819, #FF512F); 
+   background: linear-gradient(to right, #F09819, #FF512F); 
+ }
+
+#card_menu{
+   margin-top: 11%;
+}
+
+.title_menu >h1 {
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   font-size: 18px;
+   color: rgb(19, 14, 14);
+}
+
+.title_menu >p {
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   color: rgb(126, 125, 125);
+}
+
+.start{
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   background: #ffc3a0;
+   
+}
+
+.one_menu >h1 {
+   text-align: left;
+   font-family: 'Chilanka', cursive;
+   font-size: 13px;
+   color: rgb(3, 3, 3);
+}
+
+.one_menu >p {
+   text-align: left;
+   font-family: 'Chilanka', cursive;
+   font-size: 11px;
+   color: #40d0e0;
+}
+
+
+.two_menu >h1 {
+   text-align: left;
+   font-family: 'Chilanka', cursive;
+   font-size: 13px;
+   color: rgb(14, 11, 11);
+}
+
+.two_menu >p {
+   text-align: left;
+   font-family: 'Chilanka', cursive;
+   font-size: 11px;
+   color: #ff8c00;
+}
+
+.three_menu >h1 {
+   text-align: left;
+   font-family: 'Chilanka', cursive;
+   font-size: 13px;
+   color: rgb(14, 11, 11);
+}
+
+.three_menu >p {
+   text-align: left;
+   font-family: 'Chilanka', cursive;
+   font-size: 11px;
+   color: #ff0080;
+}
+
+.mains{
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   background: #ffafbd;
+}
+
+.four_menu >h1 {
+   text-align: left;
+   font-family: 'Chilanka', cursive;
+   font-size: 13px;
+   color: rgb(3, 3, 3);
+}
+
+.four_menu >p {
+   text-align: left;
+   font-family: 'Chilanka', cursive;
+   font-size: 11px;
+   color: #40d0e0;
+}
+
+
+.five_menu >h1 {
+   text-align: left;
+   font-family: 'Chilanka', cursive;
+   font-size: 13px;
+   color: rgb(14, 11, 11);
+}
+
+.five_menu >p {
+   text-align: left;
+   font-family: 'Chilanka', cursive;
+   font-size: 11px;
+   color: #ff8c00;
+}
+
+.six_menu >h1 {
+   text-align: left;
+   font-family: 'Chilanka', cursive;
+   font-size: 13px;
+   color: rgb(14, 11, 11);
+}
+
+.six_menu >p {
+   text-align: left;
+   font-family: 'Chilanka', cursive;
+   font-size: 11px;
+   color: #ff0080;
+}
+
+#drinks{
+   font-family: 'Chilanka', cursive;
+   font-size: 18px;
+   color: rgb(255, 254, 254);
+   background: #BE93C5;
+}
+
+#desserts{
+   font-family: 'Chilanka', cursive;
+   font-size: 18px;
+   color: rgb(255, 255, 255);
+   background: #7bc6cc;
+}
+
+/* ----------------------------------------------------- */
+
+#resturanlist{
+   background: #FF512F;
+   background: -webkit-linear-gradient(to right, #F09819, #FF512F); 
+   background: linear-gradient(to right, #F09819, #FF512F); 
+ }
+
+#card_list{
+   margin-top: 12%;
+}
+
+.title_list >h1 {
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   color: rgb(19, 14, 14);
+}
+
+.title_list >p {
+   text-align: center;
+   font-family: 'Chilanka', cursive;
+   font-size: 12px;
+   color: rgb(126, 125, 125);
+}
+
+#more1{
+   font-size: 13px;
+   color: #F09819
+
+}
+
+
+
+
+ 
+
+
+  

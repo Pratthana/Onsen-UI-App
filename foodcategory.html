@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Delivery App</title>
+
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+</head>
+
+<body id="foodcategory">
+
+    <ons-toolbar>
+        <div class="center">
+            <h1>FOODFEED</h1>
+        </div>
+    </ons-toolbar>
+
+
+    <div style="padding-top: 70px; text-align: center; ">
+        <label class="radio-button radio-button--material" style="width: 30%" id="menu">
+            <input type="radio" class="radio-button__input radio-button--material__input" name="r" checked="checked">
+            <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+            Delivery
+        </label>
+
+        <label class="radio-button radio-button--material" style="width: 30%" id="menu">
+            <input type="radio" class="radio-button__input radio-button--material__input" name="r">
+            <div class="radio-button__checkmark radio-button--material__checkmark"></div>
+            Pickup
+        </label>
+    </div>
+
+    <center>
+        <ons-card id="card_food">
+            <div>
+                <div class="card__contentcard--material__content">
+                    Melbourne
+                </div>
+            </div>
+        </ons-card>
+    </center>
+
+    <ons-row>
+        <ons-col width="50%">
+            <ons-card id="one">
+                <center>
+                    <ons-toolbar-button onclick="validate4()"><img src="https://image.flaticon.com/icons/svg/1037/1037762.svg" alt="Onsen UI"
+                            style="width: 35%"></ons-toolbar-button>
+                    <p>Fast Food</p>
+                </center>
+            </ons-card>
+        </ons-col>
+
+        <ons-col width="50%">
+            <ons-card id="one">
+                <center>
+                    <ons-toolbar-button onclick="validate4()"><img src="https://image.flaticon.com/icons/svg/1046/1046764.svg" alt="Onsen UI"
+                            style="width: 35%"></ons-toolbar-button>
+                    <p>Kebabs</p>
+                </center>
+            </ons-card>
+        </ons-col>
+    </ons-row>
+
+    <ons-row>
+        <ons-col width="50%">
+            <ons-card id="two">
+                <center>
+                    <ons-toolbar-button onclick="validate4()"><img src="https://image.flaticon.com/icons/svg/123/123295.svg" alt="Onsen UI"
+                            style="width: 35%"></ons-toolbar-button>
+                    <p>Chinese</p>
+                </center>
+            </ons-card>
+        </ons-col>
+
+        <ons-col width="50%">
+            <ons-card id="two">
+                <center>
+                    <ons-toolbar-button onclick="validate4()"><img src="https://image.flaticon.com/icons/svg/1404/1404945.svg" alt="Onsen UI"
+                            style="width: 35%"></ons-toolbar-button>
+                    <p>Pizza</p>
+                </center>
+            </ons-card>
+        </ons-col>
+    </ons-row>
+
+    <ons-row>
+        <ons-col width="50%">
+            <ons-card id="three">
+                <center>
+                    <ons-toolbar-button onclick="validate4()"><img src="https://image.flaticon.com/icons/svg/898/898122.svg" alt="Onsen UI"
+                            style="width: 35%"></ons-toolbar-button>
+                    <p>Thai</p>
+                </center>
+            </ons-card>
+        </ons-col>
+
+        <ons-col width="50%">
+            <ons-card id="three">
+                <center>
+                    <ons-toolbar-buttonon click="validate4()"><img src="https://image.flaticon.com/icons/svg/498/498229.svg" alt="Onsen UI"
+                            style="width: 35%"></ons-toolbar-button>
+                    <p>Vegeterian</p>
+                </center>
+            </ons-card>
+        </ons-col>
+    </ons-row>
+
+    <div class="more">
+        <ons-button id="more" onclick="validate4()" modifier="quiet">
+            <p>MORE...</p>
+        </ons-button>
+    </div>
+
+</body>
+
+<script>
+        function validate4() {
+            window.location.href = "resturantlist.html";
+        } 
+    </script>
+
+</html>

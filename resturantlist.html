@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Delivery App</title>
+
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+</head>
+
+<body id="resturanlist">
+
+    <ons-toolbar>
+        <div class="left" id="back">
+            <ons-toolbar-button onclick="validate6()"><img src="https://image.flaticon.com/icons/svg/126/126683.svg" alt="Onsen UI"
+                    style="width: 20%"></ons-toolbar-button>
+        </div>
+        <div class="center">
+            <h1>FOODFEED</h1>
+        </div>
+    </ons-toolbar>
+
+    <ons-card id="card_list">
+        <ons-row>
+            <ons-col class="title_list" width="60%">
+                <center>
+                    <img src="https://image.flaticon.com/icons/svg/1322/1322321.svg" alt="Onsen UI" style="width: 20%">
+                </center>
+                <h1>The Noodle</h1>
+                <p>Min Dilivery : $25/open</p>
+            </ons-col>
+
+            <ons-col class="title_list" width="40%">
+                <br><br>
+                <center>
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                    <div>
+                        <ons-button onclick="validate5()" id="more1" modifier="quiet">
+                            <p>MORE...</p>
+                        </ons-button>
+                    </div>
+                </center>
+            </ons-col>
+        </ons-row>
+    </ons-card>
+
+    <ons-card id="card_list1">
+        <ons-row>
+            <ons-col class="title_list" width="60%">
+                <center>
+                    <img src="https://image.flaticon.com/icons/svg/2071/2071643.svg" alt="Onsen UI" style="width: 20%">
+                </center>
+                <h1>Subway</h1>
+                <p>Min Dilivery : $15/open</p>
+            </ons-col>
+
+            <ons-col class="title_list" width="40%">
+                <br><br>
+                <center>
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                    <div>
+                        <ons-button id="more1" modifier="quiet">
+                            <p>MORE...</p>
+                        </ons-button>
+                    </div>
+                </center>
+            </ons-col>
+        </ons-row>
+    </ons-card>
+
+    <ons-card id="card_list1">
+        <ons-row>
+            <ons-col class="title_list" width="60%">
+                <center>
+                    <img src="https://image.flaticon.com/icons/svg/1588/1588899.svg" alt="Onsen UI" style="width: 20%">
+                </center>
+                <h1>Dunkin Donuts</h1>
+                <p>Min Dilivery : $55/open</p>
+            </ons-col>
+
+            <ons-col class="title_list" width="40%">
+                <br><br>
+                <center>
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                    <div>
+                        <ons-button id="more1" modifier="quiet">
+                            <p>MORE...</p>
+                        </ons-button>
+                    </div>
+                </center>
+            </ons-col>
+        </ons-row>
+    </ons-card>
+
+    <ons-card id="card_list1">
+        <ons-row>
+            <ons-col class="title_list" width="60%">
+                <center>
+                    <img src="https://image.flaticon.com/icons/svg/2114/2114304.svg" alt="Onsen UI" style="width: 20%">
+                </center>
+                <h1>JACK in the box</h1>
+                <p>Min Dilivery : $55/open</p>
+            </ons-col>
+
+            <ons-col class="title_list" width="40%">
+                <br><br>
+                <center>
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                    <div>
+                        <ons-button id="more1" modifier="quiet">
+                            <p>MORE...</p>
+                        </ons-button>
+                    </div>
+                </center>
+            </ons-col>
+        </ons-row>
+    </ons-card>
+
+    <ons-card id="card_list1">
+        <ons-row>
+            <ons-col class="title_list" width="60%">
+                <center>
+                    <img src="https://image.flaticon.com/icons/svg/541/541779.svg" alt="Onsen UI" style="width: 20%">
+                </center>
+                <h1>The Noodle</h1>
+                <p>Min Dilivery : $25/open</p>
+            </ons-col>
+
+            <ons-col class="title_list" width="40%">
+                <br><br>
+                <center>
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                    <div>
+                        <ons-button onclick="validate5()" id="more1" modifier="quiet">
+                            <p>MORE...</p>
+                        </ons-button>
+                    </div>
+                </center>
+            </ons-col>
+        </ons-row>
+    </ons-card>
+</body>
+
+<script>
+    function validate5() {
+        window.location.href = "resturantmenu.html";
+    } 
+
+    function validate6() {
+        window.location.href = "foodcategory.html";
+    } 
+</script>
+
+</html>
