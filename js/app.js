@@ -18,7 +18,7 @@ var db = firebase.firestore();
     db.collection("recommended").get().then((querySnapshot) => {
       querySnapshot.forEach((doc) => {       
         var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
-            <div class="thumbnail" style="background-image: url('${doc.data().photoUrl}')">
+            <div class="thumbnail" style="background-image: url('${doc.data().photoURL}')">
             </div>
             <div class="recomended_item_title" id="item1_${doc.data().id}">${doc.data().name}</div>
         </ons-carousel-item>`

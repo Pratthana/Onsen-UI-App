@@ -23,11 +23,10 @@
         </div>
     </ons-toolbar>
 
-    <p style="text-align: center; margin-top: 50px; margin-bottom: 15px;"></p>
+    <p style="text-align: center; margin-top: 70px; margin-bottom: 15px;"></p>
 
     <div class="content" style="text-align: center;">
         <div class="recomended">
-            <h4>Recomended</h4>
             <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
                 class="recomended_list" id="carousel">
                 <ons-carousel-item modifier="nodivider" id="item001" class="recomended_item">
@@ -35,33 +34,27 @@
                     </div>
                 </ons-carousel-item>
         
-                <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
-                class="recomended_list" id="carousel">
+            
                 <ons-carousel-item modifier="nodivider" id="item002" class="recomended_item">
                     <div class="thumbnail2" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/thumb2.png?alt=media&token=c5405195-ed75-4b89-b620-d9df704cb741')">
                     </div>
                 </ons-carousel-item>
 
-                <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
-                class="recomended_list" id="carousel">
                 <ons-carousel-item modifier="nodivider" id="item003" class="recomended_item">
-                    <div class="thumbnail" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/thumb3.png?alt=media&token=d3fe2140-8177-4797-9748-97d3209a2246')">
+                    <div class="thumbnail3" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/thumb3.png?alt=media&token=d3fe2140-8177-4797-9748-97d3209a2246')">
                     </div>
                 </ons-carousel-item>
 
-                <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
-                class="recomended_list" id="carousel">
                 <ons-carousel-item modifier="nodivider" id="item004" class="recomended_item">
-                    <div class="thumbnail" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/thumb4.png?alt=media&token=cd6af6a7-8226-4b69-bc92-0089a155e5c6')">
+                    <div class="thumbnail4" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/thumb4.png?alt=media&token=cd6af6a7-8226-4b69-bc92-0089a155e5c6')">
                     </div>
                 </ons-carousel-item>
 
-                <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
-                class="recomended_list" id="carousel">
                 <ons-carousel-item modifier="nodivider" id="item005" class="recomended_item">
-                    <div class="thumbnail" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/thumb5.png?alt=media&token=02b17131-1cae-4343-921a-07a3deaaa2c9')">
+                    <div class="thumbnail5" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/thumb5.png?alt=media&token=02b17131-1cae-4343-921a-07a3deaaa2c9')">
                     </div>
                 </ons-carousel-item>
+
             </ons-carousel>
         </div>
 
@@ -81,7 +74,7 @@
                     <center>
                         <ons-toolbar-button onclick="validate4()"><img
                                 src="https://image.flaticon.com/icons/svg/1037/1037762.svg" alt="Onsen UI"
-                                style="width: 35%"></ons-toolbar-button>
+                                style="width: 25%"></ons-toolbar-button>
                         <p>Fast Food</p>
                     </center>
                 </ons-card>
@@ -92,7 +85,7 @@
                     <center>
                         <ons-toolbar-button onclick="validate4()"><img
                                 src="https://image.flaticon.com/icons/svg/1046/1046764.svg" alt="Onsen UI"
-                                style="width: 35%"></ons-toolbar-button>
+                                style="width: 25%"></ons-toolbar-button>
                         <p>Kebabs</p>
                     </center>
                 </ons-card>
@@ -105,7 +98,7 @@
                     <center>
                         <ons-toolbar-button onclick="validate4()"><img
                                 src="https://image.flaticon.com/icons/svg/123/123295.svg" alt="Onsen UI"
-                                style="width: 35%"></ons-toolbar-button>
+                                style="width: 25%"></ons-toolbar-button>
                         <p>Chinese</p>
                     </center>
                 </ons-card>
@@ -116,7 +109,7 @@
                     <center>
                         <ons-toolbar-button onclick="validate4()"><img
                                 src="https://image.flaticon.com/icons/svg/1404/1404945.svg" alt="Onsen UI"
-                                style="width: 35%"></ons-toolbar-button>
+                                style="width: 25%"></ons-toolbar-button>
                         <p>Pizza</p>
                     </center>
                 </ons-card>
@@ -129,7 +122,7 @@
                     <center>
                         <ons-toolbar-button onclick="validate4()"><img
                                 src="https://image.flaticon.com/icons/svg/898/898122.svg" alt="Onsen UI"
-                                style="width: 35%"></ons-toolbar-button>
+                                style="width: 25%"></ons-toolbar-button>
                         <p>Thai</p>
                     </center>
                 </ons-card>
@@ -138,9 +131,9 @@
             <ons-col width="50%">
                 <ons-card id="three">
                     <center>
-                        <ons-toolbar-buttonon click="validate4()"><img
+                        <ons-toolbar-buttonon oncmclick="validate4()"><img
                                 src="https://image.flaticon.com/icons/svg/498/498229.svg" alt="Onsen UI"
-                                style="width: 35%"></ons-toolbar-button>
+                                style="width: 25%"></ons-toolbar-button>
                             <p>Vegeterian</p>
                     </center>
                 </ons-card>
@@ -149,7 +142,7 @@
 
         <div class="more">
             <ons-button id="more" onclick="validate4()" modifier="quiet">
-                <p>MORE...</p>
+                <p>BACK...</p>
             </ons-button>
         </div>
 
