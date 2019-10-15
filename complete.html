@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Delivery App</title>
+
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+</head>
+
+<body id="register">
+
+    <ons-card id="card_com">
+        <div class="title_com">
+            <center>
+                <ons-toolbar-button onclick="validate15()">
+                    <ons-carousel-item modifier="nodivider" id="item121" class="recomended_item">
+                        <div class="complete"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/completed.png?alt=media&token=d6739cc0-76fe-4634-866f-2ca2cbb2c9a9')">
+                        </div>
+                    </ons-carousel-item>
+                </ons-toolbar-button>
+            </center>
+            <h3>COMPLETE !!</h3>
+        </div>
+    </ons-card>
+
+</body>
+
+<script>
+    function validate15() {
+        window.location.href = "foodcategory.html";
+    }    
+</script>
+
+</html>

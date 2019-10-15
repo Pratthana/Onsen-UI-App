@@ -31,7 +31,11 @@
         <ons-card id="card_order">
             <div class="title_order">
                 <center>
-                    <img src="https://image.flaticon.com/icons/svg/1322/1322321.svg" alt="Onsen UI" style="width: 15%">
+                        <ons-carousel-item modifier="nodivider" id="item555" class="list_item">
+                                <div class="list5"
+                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/l1.jpg?alt=media&token=5151000c-ca55-47ae-9fab-3ee8ea3dd67a')">
+                                </div>
+                            </ons-carousel-item>
                 </center>
                 <h1>The Noodle</h1>
                 <p>Your order is below</p>
@@ -125,17 +129,17 @@
         </div>
 
         <div style="text-align: center" class="content-padded" ng-controller="ButtonsController">
-            <ons-button id="credit" modifier="material" style="width: 45%">
+            <ons-button id="credit" onclick="validate14()" modifier="material" style="width: 45%">
                 <ons-ripple></ons-ripple>
                 Credit Card
             </ons-button>
 
-            <ons-button id="paypal" modifier="material" style="width: 45%">
+            <ons-button id="paypal" onclick="validate14()" modifier="material" style="width: 45%">
                 <ons-ripple></ons-ripple>
                 Paypal
             </ons-button>
 
-            <ons-button id="cash" modifier="material" style="width: 92%">
+            <ons-button id="cash" onclick="validate14()" modifier="material" style="width: 92%">
                 <ons-ripple></ons-ripple>
                 Cash On Delivery
             </ons-button>
@@ -157,7 +161,11 @@
     } 
     function validate11() {
         window.location.href = "resturantmenu.html";
+    } 
+    function validate14() {
+        window.location.href = "complete.html";
     }   
+
 </script>
 
 </html>
