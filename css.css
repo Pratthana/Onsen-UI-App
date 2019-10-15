@@ -113,7 +113,7 @@
 }
 
 .center >h1{
-   margin-top: 1%;
+   margin-top: 0%;
    font-family: 'Roboto', sans-serif;
    font-size: 22px; 
 }
@@ -127,21 +127,36 @@
 
 #one {
    font-family: 'Chilanka', cursive;
-   font-size: 15px;
+   font-size: 17px;
    color: #40d0e0;
 }
 
+.one >p{
+   margin-top: -15%;
+}
+
+
 #two {
    font-family: 'Chilanka', cursive;
-   font-size: 15px;
+   font-size: 17px;
    color: #ff8c00;
 }
 
+.two >p{
+   margin-top: -15%;
+}
+
+
 #three {
    font-family: 'Chilanka', cursive;
-   font-size: 15px;
+   font-size: 17px;
    color: #ff0080;
 }
+
+.three >p{
+   margin-top: -15%;
+}
+
 
 .more  {
    margin-top: 0%;
@@ -425,6 +440,13 @@
    font-size: 13px;
    color: #F09819
 
+}
+
+.thumbnail{
+   width: 35px;
+   height: 35px;
+   background-size: 100%;
+   display: table;
 }
 
 .thumbnail1{
