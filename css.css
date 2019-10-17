@@ -85,8 +85,6 @@
     color: rgb(126, 125, 125);
  }
    
-  
-
   #large--cta_re{
    font-family: 'Chilanka', cursive;
    background: #0f456e;
@@ -158,12 +156,15 @@
 }
 
 
-.more  {
+.more {
    margin-top: 0%;
    text-align: center;
-   font-size: 20px;
 }
 
+#more {
+   font-size: 16px;
+   color: rgb(194, 34, 34)
+}
 
 #menu{
    text-align: center;
