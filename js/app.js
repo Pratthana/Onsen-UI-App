@@ -12,40 +12,64 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+var provider = new firebase.auth.GoogleAuthProvider();
+
+function googlesignin() {
+  firebase.auth().signInWithPopup(provider).then(function (result) {
+    var token = result.credential.accessToken;
+    var user = result.user;
+
+    console.log(token);
+    console.log(user);
+
+  }).catch(function (error) {
+
+    var errorCode = error.code;
+    var errorMessage = error.message;
+
+    console.log(error.code);
+    console.log(error.message);
+
+  });
+
+}
 var db = firebase.firestore();
 
-    $("#carousel").empty();
-    db.collection("recommended").get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {       
-        var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
+$("#carousel").empty();
+db.collection("recommended").get().then((querySnapshot) => {
+  querySnapshot.forEach((doc) => {
+    var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
             <div class="thumbnail" style="background-image: url('${doc.data().photoURL}')">
             </div>
             <div class="recomended_item_title" id="item1_${doc.data().id}">${doc.data().name}</div>
         </ons-carousel-item>`
-        $("#carousel").append(item);
-      });
-    });
+    $("#carousel").append(item);
+  });
+});
 
-    $("#carousel").empty();
-    db.collection("list").get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {       
-        var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
+$("#carousel").empty();
+db.collection("list").get().then((querySnapshot) => {
+  querySnapshot.forEach((doc) => {
+    var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
             <div class="thumbnail" style="background-image: url('${doc.data().photoURL}')">
             </div>
             <div class="recomended_item_title" id="item1_${doc.data().id}">${doc.data().name}</div>
         </ons-carousel-item>`
-        $("#carousel").append(item);
-      });
-    });
+    $("#carousel").append(item);
+  });
+});
 
-    $("#carousel").empty();
-    db.collection("complete").get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {       
-        var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
+$("#carousel").empty();
+db.collection("complete").get().then((querySnapshot) => {
+  querySnapshot.forEach((doc) => {
+    var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
             <div class="thumbnail" style="background-image: url('${doc.data().photoURL}')">
             </div>
             <div class="recomended_item_title" id="item1_${doc.data().id}">${doc.data().name}</div>
         </ons-carousel-item>`
-        $("#carousel").append(item);
-      });
-    });
+    $("#carousel").append(item);
+  });
+});
+
+
+
