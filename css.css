@@ -93,9 +93,10 @@
  /* ----------------------------------------------------- */
 
  #foodcategory{
-   background: #FF512F;
-   background: -webkit-linear-gradient(to right, #F09819, #FF512F); 
-   background: linear-gradient(to right, #F09819, #FF512F); 
+   background: #EB3349; 
+   background: -webkit-linear-gradient(to right, #F45C43, #EB3349); 
+   background: linear-gradient(to right, #F45C43, #EB3349); 
+ 
  }
 
  #card_food{
@@ -163,7 +164,7 @@
 
 #more {
    font-size: 16px;
-   color: rgb(194, 34, 34)
+   color: rgb(20, 2, 2);
 }
 
 #menu{
@@ -175,9 +176,9 @@
 /* ----------------------------------------------------- */
 
 #orderconfirmation{
-   background: #FF512F;
-   background: -webkit-linear-gradient(to right, #F09819, #FF512F); 
-   background: linear-gradient(to right, #F09819, #FF512F); 
+   background: #EB3349; 
+   background: -webkit-linear-gradient(to right, #F45C43, #EB3349); 
+   background: linear-gradient(to right, #F45C43, #EB3349); 
 }
 
 #card_order{
@@ -273,9 +274,9 @@
 /* ----------------------------------------------------- */
 
 #resturanmenu{
-   background: #FF512F;
-   background: -webkit-linear-gradient(to right, #F09819, #FF512F); 
-   background: linear-gradient(to right, #F09819, #FF512F); 
+   background: #EB3349; 
+   background: -webkit-linear-gradient(to right, #F45C43, #EB3349); 
+   background: linear-gradient(to right, #F45C43, #EB3349);  
  }
 
 #card_menu{
@@ -414,9 +415,9 @@
 /* ----------------------------------------------------- */
 
 #resturanlist{
-   background: #FF512F;
-   background: -webkit-linear-gradient(to right, #F09819, #FF512F); 
-   background: linear-gradient(to right, #F09819, #FF512F); 
+   background: #EB3349; 
+   background: -webkit-linear-gradient(to right, #F45C43, #EB3349); 
+   background: linear-gradient(to right, #F45C43, #EB3349);  
  }
 
 #card_list{
@@ -444,6 +445,13 @@
 }
 
 /* ................................................... */
+
+#completed{
+   background: #EB3349; 
+   background: -webkit-linear-gradient(to right, #F45C43, #EB3349); 
+   background: linear-gradient(to right, #F45C43, #EB3349);
+ 
+}
 
 #card_com{
    margin-top: 40%;
