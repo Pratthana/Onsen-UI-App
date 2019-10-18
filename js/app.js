@@ -11,29 +11,37 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
-var provider = new firebase.auth.GoogleAuthProvider();
-
-function googlesignin() {
-  firebase.auth().signInWithPopup(provider).then(function (result) {
-    var token = result.credential.accessToken;
-    var user = result.user;
-
-    console.log(token);
-    console.log(user);
-
-  }).catch(function (error) {
-
-    var errorCode = error.code;
-    var errorMessage = error.message;
-
-    console.log(error.code);
-    console.log(error.message);
-
-  });
-
-}
 var db = firebase.firestore();
+
+
+document.addEventListener('init', function (event) {
+  var page = event.target;
+
+  if (page.id === 'index') {
+    console.log("index");
+
+    $("#gbtn").click(function () {
+      var provider = new firebase.auth.GoogleAuthProvider();
+      firebase.auth().signInWithPopup(provider).then(function(result) {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        var token = result.credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        content.load('foodcategory.html');
+      }).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
+        // ...
+      });
+    });
+
+  }
+});
 
 $("#carousel").empty();
 db.collection("recommended").get().then((querySnapshot) => {
@@ -70,6 +78,8 @@ db.collection("complete").get().then((querySnapshot) => {
     $("#carousel").append(item);
   });
 });
+
+
 
 
 
