@@ -1,5 +1,8 @@
 #index .page__background{
-   background-color: #ff8c00;
+   background: #833ab4; 
+   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
+   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
+   
 }
  
  #card{
@@ -57,15 +60,15 @@
 
   /* ----------------------------------------------------- */
 
-  #register{
-   background: #833ab4;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  #register .page__background{
+   background: #833ab4; 
+   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
+   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
    
-  }
+}
 
   #card_re{
-    margin-top: 0%;
+    margin-top: 1%;
 }
 
   .title_re >h3 {
