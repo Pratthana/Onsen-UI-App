@@ -16,9 +16,24 @@ var db = firebase.firestore();
 
 document.addEventListener('init', function (event) {
   var page = event.target;
+  console.log(page.id);
 
   if (page.id === 'index') {
     console.log("index");
+
+    $("#login").click(function () {
+      console.log("m")
+      var email = $("#email").val();
+      var password = $("#password").val();
+      firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
+        content.load('foodcategory.html');
+      }
+      )
+        .catch(function (error) { 
+          console.log(error.message);
+        });
+    });
+
 
     $("#gbtn").click(function () {
       var provider = new firebase.auth.GoogleAuthProvider();
@@ -42,6 +57,9 @@ document.addEventListener('init', function (event) {
 
   }
 });
+
+
+
 
 $("#carousel").empty();
 db.collection("recommended").get().then((querySnapshot) => {
