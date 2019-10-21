@@ -1,170 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
+<ons-page id="resturantlistpage">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Food Delivery App</title>
-
-    <script src="lib/onsen/js/onsenui.js"></script>
-    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
-    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
-    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
-</head>
-
-<body id="resturanlist">
-
-    <ons-toolbar>
-        <div class="left" id="back">
-            <ons-toolbar-button onclick="validate6()"><img src="https://image.flaticon.com/icons/svg/126/126683.svg"
-                    alt="Onsen UI" style="width: 20%"></ons-toolbar-button>
-        </div>
-        <div class="center">
-            <h1>FOODFEED</h1>
-        </div>
-    </ons-toolbar>
-
-    <ons-card id="card_list">
-        <ons-row>
-            <ons-col class="title_list" width="60%">
-                <center>
-                    <ons-carousel-item modifier="nodivider" id="item111" class="list_item">
-                        <div class="list1"
-                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/ramen.png?alt=media&token=b95ed7d5-ae5c-47f3-87d1-8b20c4e07a24')">
+        <ons-toolbar>
+            <div class="left" class="back" id="backfcg">
+                <ons-toolbar-button><img src="https://image.flaticon.com/icons/svg/126/126683.svg"
+                        alt="Onsen UI" style="width: 20%" id="backfcg"></ons-toolbar-button>
+            </div>
+            <div class="center">
+                <h1>FOODFEED</h1>
+            </div>
+        </ons-toolbar>
+    
+        <ons-card id="card_list">
+            <ons-row>
+                <ons-col class="title_list" width="60%">
+                    <center>
+                        <ons-carousel-item modifier="nodivider" id="item111" class="list_item">
+                            <div class="list1"
+                                style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/ramen.png?alt=media&token=b95ed7d5-ae5c-47f3-87d1-8b20c4e07a24')">
+                            </div>
+                        </ons-carousel-item>
+                    </center>
+                    <h1>The Noodle</h1>
+                    <p>Min Dilivery : 25.- /open</p>
+                </ons-col>
+    
+                <ons-col class="title_list" width="40%">
+                    <br><br>
+                    <center>
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                        <div>
+                            <ons-button class="more1" id="morenoodle" modifier="quiet">
+                                <p>MORE...</p>
+                            </ons-button>
                         </div>
-                    </ons-carousel-item>
-                </center>
-                <h1>The Noodle</h1>
-                <p>Min Dilivery : 25.- /open</p>
-            </ons-col>
-
-            <ons-col class="title_list" width="40%">
-                <br><br>
-                <center>
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
-                    <div>
-                        <ons-button onclick="validate5()" id="more1" modifier="quiet">
-                            <p>MORE...</p>
-                        </ons-button>
-                    </div>
-                </center>
-            </ons-col>
-        </ons-row>
-    </ons-card>
-
-    <ons-card id="card_list1">
-        <ons-row>
-            <ons-col class="title_list" width="60%">
-                <center>
-                    <ons-carousel-item modifier="nodivider" id="item222" class="list_item">
-                        <div class="list2"
-                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/coffee.png?alt=media&token=40526b44-fbf3-461d-bbaa-32d40b1334e3')">
+                    </center>
+                </ons-col>
+            </ons-row>
+        </ons-card>
+    
+        <ons-card id="card_list1">
+            <ons-row>
+                <ons-col class="title_list" width="60%">
+                    <center>
+                        <ons-carousel-item modifier="nodivider" id="item222" class="list_item">
+                            <div class="list2"
+                                style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/coffee.png?alt=media&token=40526b44-fbf3-461d-bbaa-32d40b1334e3')">
+                            </div>
+                        </ons-carousel-item>
+                    </center>
+                    <h1>Subway</h1>
+                    <p>Min Dilivery : 15.- /open</p>
+                </ons-col>
+    
+                <ons-col class="title_list" width="40%">
+                    <br><br>
+                    <center>
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                        <div>
+                            <ons-button class="more1" id="moresubway" modifier="quiet">
+                                <p>MORE...</p>
+                            </ons-button>
                         </div>
-                    </ons-carousel-item>
-                </center>
-                <h1>Subway</h1>
-                <p>Min Dilivery : 15.- /open</p>
-            </ons-col>
-
-            <ons-col class="title_list" width="40%">
-                <br><br>
-                <center>
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
-                    <div>
-                        <ons-button id="more1" modifier="quiet">
-                            <p>MORE...</p>
-                        </ons-button>
-                    </div>
-                </center>
-            </ons-col>
-        </ons-row>
-    </ons-card>
-
-    <ons-card id="card_list1">
-        <ons-row>
-            <ons-col class="title_list" width="60%">
-                <center>
-                    <ons-carousel-item modifier="nodivider" id="item333" class="list_item">
-                        <div class="list3"
-                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/donut.png?alt=media&token=baa61ba6-a4ef-4d23-a1a1-7e3138ffb0a9')">
+                    </center>
+                </ons-col>
+            </ons-row>
+        </ons-card>
+    
+        <ons-card id="card_list1">
+            <ons-row>
+                <ons-col class="title_list" width="60%">
+                    <center>
+                        <ons-carousel-item modifier="nodivider" id="item333" class="list_item">
+                            <div class="list3"
+                                style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/donut.png?alt=media&token=baa61ba6-a4ef-4d23-a1a1-7e3138ffb0a9')">
+                            </div>
+                        </ons-carousel-item>
+                    </center>
+                    <h1>Dunkin Donuts</h1>
+                    <p>Min Dilivery : 55.- /open</p>
+                </ons-col>
+    
+                <ons-col class="title_list" width="40%">
+                    <br><br>
+                    <center>
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                        <div>
+                            <ons-button class="more1" id="moredonuts" modifier="quiet">
+                                <p>MORE...</p>
+                            </ons-button>
                         </div>
-                    </ons-carousel-item>
-                </center>
-                <h1>Dunkin Donuts</h1>
-                <p>Min Dilivery : 55.- /open</p>
-            </ons-col>
-
-            <ons-col class="title_list" width="40%">
-                <br><br>
-                <center>
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
-                    <div>
-                        <ons-button id="more1" modifier="quiet">
-                            <p>MORE...</p>
-                        </ons-button>
-                    </div>
-                </center>
-            </ons-col>
-        </ons-row>
-    </ons-card>
-
-    <ons-card id="card_list1">
-        <ons-row>
-            <ons-col class="title_list" width="60%">
-                <center>
-                    <ons-carousel-item modifier="nodivider" id="item444" class="list_item">
-                        <div class="list4"
-                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/food.png?alt=media&token=4d879916-b5f9-45fb-b5c2-35c476b88ffe')">
+                    </center>
+                </ons-col>
+            </ons-row>
+        </ons-card>
+    
+        <ons-card id="card_list1">
+            <ons-row>
+                <ons-col class="title_list" width="60%">
+                    <center>
+                        <ons-carousel-item modifier="nodivider" id="item444" class="list_item">
+                            <div class="list4"
+                                style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/food.png?alt=media&token=4d879916-b5f9-45fb-b5c2-35c476b88ffe')">
+                            </div>
+                        </ons-carousel-item>
+                    </center>
+                    <h1>JACK in the box</h1>
+                    <p>Min Dilivery : 55.- /open</p>
+                </ons-col>
+    
+                <ons-col class="title_list" width="40%">
+                    <br><br>
+                    <center>
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
+                        <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
+                        <div>
+                            <ons-button class="more1" id="morejack" modifier="quiet">
+                                <p>MORE...</p>
+                            </ons-button>
                         </div>
-                    </ons-carousel-item>
-                </center>
-                <h1>JACK in the box</h1>
-                <p>Min Dilivery : 55.- /open</p>
-            </ons-col>
-
-            <ons-col class="title_list" width="40%">
-                <br><br>
-                <center>
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/262/262544.svg" alt="Onsen UI" style="width: 15%">
-                    <img src="https://image.flaticon.com/icons/svg/263/263075.svg" alt="Onsen UI" style="width: 15%">
-                    <div>
-                        <ons-button id="more1" modifier="quiet">
-                            <p>MORE...</p>
-                        </ons-button>
-                    </div>
-                </center>
-            </ons-col>
-        </ons-row>
-    </ons-card>
-
-</body>
-
-<script>
-    function validate5() {
-        window.location.href = "resturantmenu.html";
-    }
-
-    function validate6() {
-        window.location.href = "foodcategory.html";
-    } 
-</script>
-
-</html>
+                    </center>
+                </ons-col>
+            </ons-row>
+        </ons-card>
+    
+    </ons-page>
+    

@@ -1,208 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Food Delivery App</title>
-
-    <script src="lib/onsen/js/onsenui.js"></script>
-    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
-    <script src="js/app.js"></script>
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
-    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
-    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
-</head>
-
-<body >
-<ons-page id="orderconfirmation">
-    <ons-toolbar>
-        <div class="left" id="back">
-            <ons-toolbar-button onclick="validate11()" ><img src="https://image.flaticon.com/icons/svg/126/126683.svg" alt="Onsen UI"
-                    style="width: 20%"></ons-toolbar-button>
-        </div>
-        <div class="center">
-            <h1>FOODFEED</h1>
-        </div>
-    </ons-toolbar>
-
-    <!-- <center>
-        <ons-card id="card_order">
-            <div class="title_order">
-                <center>
-                        <ons-carousel-item modifier="nodivider" id="item555" class="list_item">
-                                <div class="list5"
-                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/l1.jpg?alt=media&token=5151000c-ca55-47ae-9fab-3ee8ea3dd67a')">
-                                </div>
-                            </ons-carousel-item>
-                </center>
-                <h1>The Noodle</h1>
-                <p>Your order is below</p>
+<ons-page id="orderconfirmationpage">
+        <ons-toolbar>
+            <div class="left" id="back" class="backrm">
+                <ons-toolbar-button><img src="https://image.flaticon.com/icons/svg/126/126683.svg" alt="Onsen UI"
+                        style="width: 20%"></ons-toolbar-button>
             </div>
-        </ons-card>
-    </center>
-
-    <ons-card id="card_col">
-
-        <ons-row id="one_order">
-            <ons-col width="20%">
-                <center>Quantity</center>
-                <p id="num"></p>
-            </ons-col>
-
-            <ons-col width="60%">
-                <center>Name of Dish</center>
-                <p id="list"></p>
-            </ons-col>
-
-            <ons-col width="20%">
-                <center>Price</center>
-                <p id="price"></p>
-            </ons-col>
-            ____________________________________________________________
-        </ons-row>
-<!-- 
-        <ons-row id="two_order">
-            <ons-col width="20%">
-                <center>1</center>
-            </ons-col>
-
-            <ons-col width="60%">
-                <center>Chicken Chowmein</center>
-            </ons-col>
-
-            <ons-col width="20%">
-                <center>30.-</center>
-            </ons-col>
-        </ons-row>
-
-        <ons-row id="three_order">
-            <ons-col width="20%">
-                <center>3</center>
-            </ons-col>
-
-            <ons-col width="60%">
-                <center>Beef Stir Fry</center>
-            </ons-col>
-
-            <ons-col width="20%">
-                <center>10.-</center>
-            </ons-col>
-        </ons-row>
-
-        <ons-row id="four_order">
-            <ons-col width="20%">
-                <center>2</center>
-            </ons-col>
-
-            <ons-col width="60%">
-                <center>Soft Drinks(Coke)</center>
-            </ons-col>
-
-            <ons-col width="20%">
-                <center>9.-</center>
-            </ons-col>
-        </ons-row> -->
-
-        <!-- <br>
-
+            <div class="center">
+                <h1>FOODFEED</h1>
+            </div>
+        </ons-toolbar>
+    
         <center>
-            <ons-card id="total">
-                <div>
-                    <div class="card__contentcard--material__content">
-                        Total : 
-                    </div>
+            <ons-card id="card_order">
+                <div class="title_order">
+                    <center>
+                            <ons-carousel-item modifier="nodivider" id="item555" class="list_item">
+                                    <div class="list5"
+                                        style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/l1.jpg?alt=media&token=5151000c-ca55-47ae-9fab-3ee8ea3dd67a')">
+                                    </div>
+                                </ons-carousel-item>
+                    </center>
+                    <h1>The Noodle</h1>
+                    <p>Your order is below</p>
                 </div>
             </ons-card>
         </center>
-
-        <center>
-            <ons-card id="card_enter">
-                <div>
-                    <div class="card__contentcard--material__content">
-                        Enter coupon if you have any
-                    </div>
-                </div>
-            </ons-card>
-        </center>
-
-        <div class="pay" style="text-align: center">
-            <p>Pay via</p>
-        </div>
-
-        <div style="text-align: center" class="content-padded" ng-controller="ButtonsController">
-            <ons-button id="credit" onclick="validate14()" modifier="material" style="width: 45%">
-                <ons-ripple></ons-ripple>
-                Credit Card
-            </ons-button>
-
-            <ons-button id="paypal" onclick="validate14()" modifier="material" style="width: 45%">
-                <ons-ripple></ons-ripple>
-                Paypal
-            </ons-button>
-
-            <ons-button id="cash" onclick="validate14()" modifier="material" style="width: 92%">
-                <ons-ripple></ons-ripple>
-                Cash On Delivery
-            </ons-button>
-        </div>
-
-        <div class="more">
-            <ons-button id="cancle" onclick="validate10()" modifier="quiet">
-                <p>CANCLE...</p>
-            </ons-button>
-        </div>
-
-    </ons-card> -->
-    <ons-row class="row justify-content-center">
-            <!-- <ons-col class="col-3" width="25%"></ons-col> -->
-            <ons-col>
-                <ons-card style="width: 99%">
     
+        <ons-card id="card_col">
     
-                    <!-- <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content"> -->
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel" style="text-align: center">CART</h5>
-    
-                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button> -->
-                    </div>
-                    <div class="modal-body">
-                        <table class="show-cart table">
-    
-                        </table>
-                        <div>Total Price : <span class="total-cart"></span> ฿</div>
-                    </div>
-                    <div style="text-align: center">
-                        <!-- <ons-button style="background-color:crimson" data-dismiss="modal">Close</ons-button> -->
-                        <ons-button class="ordernowbtn" style="background-color:blueviolet">Order now</ons-button>
-                    </div>
-                    <!-- </div>
+            <ons-row class="row justify-content-center">
+                <!-- <ons-col class="col-3" width="25%"></ons-col> -->
+                <ons-col>
+                    <ons-card style="width: 99%">
+        
+        
+                        <!-- <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content"> -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel" style="text-align: center">CART</h5>
+        
+                            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button> -->
                         </div>
-                    </div> -->
-                </ons-card>
+                        <div class="modal-body">
+                            <table class="show-cart table">
+        
+                            </table>
     
+                        <div style="text-align: center">
+                            <ons-button class="ordernowbtn" style="background-color:blueviolet"> <div>Total Price : <span class="total-cart"></span> ฿</div>
+                            </div></ons-button>
+                        </div>
+                    
+                    </ons-card>
+        
+        
+                </ons-col>
+        
+            </ons-row>
     
-            </ons-col>
+        
     
-        </ons-row>
-    </ons-page>
-</body>
-
-<script>
-    function validate10() {
-        window.location.href = "foodcategory.html";
-    } 
-    function validate11() {
-        window.location.href = "resturantmenu.html";
-    } 
-    function validate14() {
-        window.location.href = "complete.html";
-    }   
-
-</script>
-
-</html>
+            <div class="pay" style="text-align: center">
+                <p>Pay via</p>
+            </div>
+    
+            <div style="text-align: center" class="content-padded" ng-controller="ButtonsController">
+                <ons-button id="credit" class="credit" modifier="material" style="width: 45%">
+                    <ons-ripple></ons-ripple>
+                    Credit Card
+                </ons-button>
+    
+                <ons-button id="paypal" class="paypal" modifier="material" style="width: 45%">
+                    <ons-ripple></ons-ripple>
+                    Paypal
+                </ons-button>
+    
+                <ons-button id="cash" class="cash" modifier="material" style="width: 92%">
+                    <ons-ripple></ons-ripple>
+                    Cash On Delivery
+                </ons-button>
+            </div>
+    
+            <div class="more">
+                <ons-button id="cancle" class="cancle" modifier="quiet">
+                    <p>CANCLE...</p>
+                </ons-button>
+            </div>
+    
+        </ons-card>
+    
+        </ons-page>

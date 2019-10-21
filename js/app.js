@@ -18,38 +18,30 @@ document.addEventListener('init', function (event) {
   var page = event.target;
   console.log(page.id);
 
-  if (page.id === 'index') {
-    console.log("index");
+  if (page.id === 'foodcategorypage') {
+    console.log("foodcategorypage");
 
-
-    $("#login").click(function () {
-      console.log("m")
-      var email = $("#email").val();
-      var password = $("#password").val();
-      firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
-        content.load('foodcategory.html');
-      }
-      )
-        .catch(function (error) {
-          console.log(error.message);
-        });
+    $("#logout").click(function () {
+      content.load('login.html');
     });
 
-
-    $("#gbtn").click(function () {
-      var provider = new firebase.auth.GoogleAuthProvider();
-      firebase.auth().signInWithPopup(provider).then(function (result) {
-        var token = result.credential.accessToken;
-        var user = result.user;
-        content.load('foodcategory.html');
-
-      }).catch(function (error) {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        var email = error.email;
-        var credential = error.credential;
-
-      });
+    $("#fastfood").click(function () {
+      content.load('resturantlist.html');
+    });
+    $("#kebabs").click(function () {
+      content.load('resturantlist.html');
+    });
+    $("#chinese").click(function () {
+      content.load('resturantlist.html');
+    });
+    $("#pizza").click(function () {
+      content.load('resturantlist.html');
+    });
+    $("#thai").click(function () {
+      content.load('resturantlist.html');
+    });
+    $("#vegeterian").click(function () {
+      content.load('resturantlist.html');
     });
 
     $("#carousel").empty();
@@ -88,6 +80,137 @@ document.addEventListener('init', function (event) {
       });
     });
 
+  }
+
+  if (page.id === 'resturantlistpage') {
+    console.log("resturantlistpage");
+
+    $("#backfcg").click(function () {
+      content.load('foodcategory.html');
+    });
+
+    $("#morenoodle").click(function () {
+      content.load('resturantmenu.html');
+    });
+    $("#moresubway").click(function () {
+      content.load('');
+    });
+    $("#moredonuts").click(function () {
+      content.load('');
+    });
+    $("#morejack").click(function () {
+      content.load('');
+    });
+  }
+
+  if (page.id === 'resturantmenupage') {
+    console.log("resturantmenupage");
+
+    $("#backrl").click(function () {
+      content.load('resturantlist.html');
+    });
+
+    $("#order").click(function () {
+      content.load('orderconfirmation.html');
+    });
+  }
+
+  if (page.id === 'orderconfirmationpage') {
+    console.log("orderconfirmationpage");
+
+    $("#backrm").click(function () {
+      content.load('resturantmenu.html');
+    });
+
+    $("#credit").click(function () {
+      content.load('');
+    });
+    $("#paypal").click(function () {
+      content.load('complete.html');
+    });
+    $("#cash").click(function () {
+      content.load('complete.html');
+    });
+    $("#cancle").click(function () {
+      content.load('foodcategory.html');
+    });
+  }
+
+  if (page.id === 'loginpage') {
+    console.log("loginpage");
+    
+    $("#sing").click(function () {
+      content.load('register.html');
+    });
+
+    $("#login").click(function () {
+      var email = $("#email").val();
+      var password = $("#password").val();
+      firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
+        content.load('foodcategory.html');
+      }
+      )
+        .catch(function (error) {
+          console.log(error.message);
+        });
+    })
+
+    $("#gbtn").click(function () {
+      var provider = new firebase.auth.GoogleAuthProvider();
+      firebase.auth().signInWithPopup(provider).then(function (result) {
+        var token = result.credential.accessToken;
+        var user = result.user;
+        content.load('foodcategory.html');
+
+      }).catch(function (error) {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        var email = error.email;
+        var credential = error.credential;
+
+      });
+    });
+  }
+
+  if (page.id === 'registerpage') {
+    console.log("registerpage");
+    
+    $("#backlogin").click(function () {
+      content.load('login.html');
+    });
+
+    $("#register").click(function () {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        if (errorCode === 'auth/weak-password') {
+          alert('The password is too weak');
+        } else {
+          alert(errorMessage);
+          content.load('foodcategory.html');
+        }
+        console.log(error);
+      });
+    });  
+    
+    $("#gbtn").click(function () {
+      var provider = new firebase.auth.GoogleAuthProvider();
+      firebase.auth().signInWithPopup(provider).then(function (result) {
+        var token = result.credential.accessToken;
+        var user = result.user;
+        content.load('foodcategory.html');
+
+      }).catch(function (error) {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        var email = error.email;
+        var credential = error.credential;
+
+      });
+    });
   }
 
 
