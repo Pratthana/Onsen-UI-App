@@ -13,6 +13,25 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
 
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    // var displayName = user.displayName;
+     var email = user.email;
+    // var emailVerified = user.emailVerified;
+    // var photoURL = user.photoURL;
+    // var isAnonymous = user.isAnonymous;
+    // var uid = user.uid;
+    // var providerData = user.providerData;
+    // ...
+    console.log("user :",email, " signed in");
+    
+  } else {
+    // User is signed out.
+    // ...
+  }
+});
+
 
 document.addEventListener('init', function (event) {
   var page = event.target;
@@ -129,18 +148,29 @@ document.addEventListener('init', function (event) {
 
     $("#gbtn").click(function () {
       var provider = new firebase.auth.GoogleAuthProvider();
-      firebase.auth().signInWithPopup(provider).then(function (result) {
-        var token = result.credential.accessToken;
+      firebase.auth().signInWithRedirect(provider);
+      firebase.auth().getRedirectResult().then(function(result) {
+        
+        
+        if (result.credential) {
+          // This gives you a Google Access Token. You can use it to access the Google API.
+          var token = result.credential.accessToken;
+          
+          
+        }
+        // The signed-in user info.
         var user = result.user;
-        content.load('foodcategory.html');
-
-      }).catch(function (error) {
+      }).catch(function(error) {
+        // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
+        // The email of the user's account used.
         var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
         var credential = error.credential;
-
+        // ...
       });
+      
     });
   }
 
@@ -173,6 +203,7 @@ document.addEventListener('init', function (event) {
       firebase.auth().signInWithPopup(provider).then(function (result) {
         var token = result.credential.accessToken;
         var user = result.user;
+
         content.load('foodcategory.html');
 
       }).catch(function (error) {
