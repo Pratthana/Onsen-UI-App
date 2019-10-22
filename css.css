@@ -86,68 +86,60 @@
 
  /* ----------------------------------------------------------------------------------- */
 
- #registerpage .page__background{
+ #foodcategorypage .page__background{
    background: #EB3349; 
    background: -webkit-linear-gradient(to right, #F45C43, #EB3349); 
    background: linear-gradient(to right, #F45C43, #EB3349); 
  
  }
 
+.recomended1{
+   margin-top: 10%;
+   width: 150px;
+   height: 120px;
+   background-size: 150%;
+   display: table;
+}
+
+.thumbnail{
+   width: 50px;
+   height: 50px;
+   background-size: 100%;
+   display: table;
+}
+
  #card_food{
-   font-family: 'Chilanka', cursive;
-   margin-top: 4%;
+   margin-top: 5%;
    height: 10%;
    width: 80%;
 
 }
 
-#back{
-   margin-top: 2%;
-}
-
-.center >h1{
-   margin-top: 0%;
-   font-family: 'Roboto', sans-serif;
-   font-size: 22px; 
-}
-
-.card__contentcard--material__content {
+.Melbourne{
    text-align: center;
-   font-family: 'Chilanka', cursive;
-   font-size: 15px;
-   color: #050505;
-}
-
-#one {
-   font-family: 'Chilanka', cursive;
-   font-size: 17px;
-   color: #40d0e0;
+   font-family: 'Comfortaa', cursive;
+   font-size: 18px;
 }
 
 .one >p{
-   margin-top: -15%;
-}
-
-
-#two {
-   font-family: 'Chilanka', cursive;
-   font-size: 17px;
-   color: #ff8c00;
+   margin-top: -12%;
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
+   color: #40d0e0;
 }
 
 .two >p{
-   margin-top: -15%;
-}
-
-
-#three {
-   font-family: 'Chilanka', cursive;
-   font-size: 17px;
-   color: #ff0080;
+   margin-top: -13%;
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
+   color: #ff8c00;
 }
 
 .three >p{
-   margin-top: -15%;
+   margin-top: -13%;
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
+   color: #ff0080;
 }
 
 
@@ -156,112 +148,44 @@
    text-align: center;
 }
 
-#more {
-   font-size: 16px;
-   color: rgb(20, 2, 2);
-}
-
-#menu{
+#logout {
    text-align: center;
-   font-family: 'Chilanka', cursive;
-   font-size: 20px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 18px;
+   color: rgb(187, 21, 21);
 }
 
-/* ----------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
 
-#orderconfirmation{
+#resturantlistpage .page__background{
    background: #EB3349; 
    background: -webkit-linear-gradient(to right, #F45C43, #EB3349); 
    background: linear-gradient(to right, #F45C43, #EB3349); 
 }
 
-#card_order{
-   margin-top: 12%;
+#card_list{
+   margin-top: 3%;
 }
 
-.title_order >h1 {
+.list >h6 {
+   margin-top: 5%;
    text-align: center;
-   font-family: 'Chilanka', cursive;
+   font-family: 'Comfortaa', cursive;
    font-size: 20px;
    color: rgb(19, 14, 14);
 }
 
-.title_order >p {
+.list >p {
+   margin-top: -20%;
    text-align: center;
-   font-family: 'Chilanka', cursive;
-   font-size: 17px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 12px;
    color: rgb(126, 125, 125);
 }
 
-#one_order {
-   font-family: 'Chilanka', cursive;
-   font-size: 18px;
-   color: #959696;
-}
-
-#two_order {
-   font-family: 'Chilanka', cursive;
-   font-size: 16px;
-   color: #40d0e0;
-}
-
-#three_order {
-   font-family: 'Chilanka', cursive;
-   font-size: 16px;
-   color: #ff8c00;
-}
-
-#four_order {
-   font-family: 'Chilanka', cursive;
-   font-size: 16px;
-   color: #ff0080;
-}
-
-#total{
-   font-family: 'Chilanka', cursive;
-   font-size: 16px;
-   background: #f7f0f0;
-   height: 10%;
-}
-
-#card_enter{
-   font-family: 'Chilanka', cursive;
-   font-size: 18px;
-   height: 10%;
-}
-
-.pay >p{
-   font-family: 'Chilanka', cursive;
-   font-size: 18px;
-}
-
-#credit{
-   padding: 2%;
-   font-family: 'Chilanka', cursive;
+.more1 >p{
    font-size: 15px;
-   color: #000;
-   background: #77a1d3;
-}
-
-#paypal{
-   padding: 2%;
-   font-family: 'Chilanka', cursive;
-   font-size: 15px;
-   color: #000;
-   background: #79cbca;
-}
-
-#cash{
-   padding: 2%;
-   font-family: 'Chilanka', cursive;
-   font-size: 15px;
-   color: #000;
-   background: #e684ac;
-}
-
-#cancle{
-   font-size: 15px;
-   color: rgb(194, 34, 34)
+   color: #F09819
 }
 
 
@@ -414,29 +338,96 @@
    background: linear-gradient(to right, #F45C43, #EB3349);  
  }
 
-#card_list{
+ #card_order{
    margin-top: 12%;
 }
 
-.title_list >h1 {
+.title_order >h1 {
    text-align: center;
    font-family: 'Chilanka', cursive;
-   font-size: 15px;
+   font-size: 20px;
    color: rgb(19, 14, 14);
 }
 
-.title_list >p {
+.title_order >p {
    text-align: center;
    font-family: 'Chilanka', cursive;
-   font-size: 12px;
+   font-size: 17px;
    color: rgb(126, 125, 125);
 }
 
-#more1{
-   font-size: 13px;
-   color: #F09819
-
+#one_order {
+   font-family: 'Chilanka', cursive;
+   font-size: 18px;
+   color: #959696;
 }
+
+#two_order {
+   font-family: 'Chilanka', cursive;
+   font-size: 16px;
+   color: #40d0e0;
+}
+
+#three_order {
+   font-family: 'Chilanka', cursive;
+   font-size: 16px;
+   color: #ff8c00;
+}
+
+#four_order {
+   font-family: 'Chilanka', cursive;
+   font-size: 16px;
+   color: #ff0080;
+}
+
+#total{
+   font-family: 'Chilanka', cursive;
+   font-size: 16px;
+   background: #f7f0f0;
+   height: 10%;
+}
+
+#card_enter{
+   font-family: 'Chilanka', cursive;
+   font-size: 18px;
+   height: 10%;
+}
+
+.pay >p{
+   font-family: 'Chilanka', cursive;
+   font-size: 18px;
+}
+
+#credit{
+   padding: 2%;
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   color: #000;
+   background: #77a1d3;
+}
+
+#paypal{
+   padding: 2%;
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   color: #000;
+   background: #79cbca;
+}
+
+#cash{
+   padding: 2%;
+   font-family: 'Chilanka', cursive;
+   font-size: 15px;
+   color: #000;
+   background: #e684ac;
+}
+
+#cancle{
+   font-size: 15px;
+   color: rgb(194, 34, 34)
+}
+
+
 
 /* ................................................... */
 
@@ -470,47 +461,7 @@
 
 /* ................................................... */
 
-.thumbnail{
-   width: 35px;
-   height: 35px;
-   background-size: 100%;
-   display: table;
-}
 
-.thumbnail1{
-   width: 150px;
-   height: 120px;
-   background-size: 150%;
-   display: table;
-}
-
-.thumbnail2{
-   width: 150px;
-   height: 120px;
-   background-size: 150%;
-   display: table;
-}
-
-.thumbnail3{
-   width: 150px;
-   height: 120px;
-   background-size: 150%;
-   display: table;
-}
-
-.thumbnail4{
-   width: 150px;
-   height: 120px;
-   background-size: 150%;
-   display: table;
-}
-
-.thumbnail5{
-   width: 150px;
-   height: 120px;
-   background-size: 150%;
-   display: table;
-}
 
 .list1{
    width: 60px;

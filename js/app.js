@@ -44,42 +44,6 @@ document.addEventListener('init', function (event) {
       content.load('resturantlist.html');
     });
 
-    $("#carousel").empty();
-    db.collection("recommended").get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-        var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
-            <div class="thumbnail" style="background-image: url('${doc.data().photoURL}')">
-            </div>
-            <div class="recomended_item_title" id="item1_${doc.data().id}">${doc.data().name}</div>
-        </ons-carousel-item>`
-        $("#carousel").append(item);
-      });
-    });
-
-    $("#carousel").empty();
-    db.collection("list").get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-        var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
-            <div class="thumbnail" style="background-image: url('${doc.data().photoURL}')">
-            </div>
-            <div class="recomended_item_title" id="item1_${doc.data().id}">${doc.data().name}</div>
-        </ons-carousel-item>`
-        $("#carousel").append(item);
-      });
-    });
-
-    $("#carousel").empty();
-    db.collection("complete").get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-        var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
-            <div class="thumbnail" style="background-image: url('${doc.data().photoURL}')">
-            </div>
-            <div class="recomended_item_title" id="item1_${doc.data().id}">${doc.data().name}</div>
-        </ons-carousel-item>`
-        $("#carousel").append(item);
-      });
-    });
-
   }
 
   if (page.id === 'resturantlistpage') {
@@ -424,4 +388,40 @@ document.addEventListener('init', function (event) {
 
   displayCart();
 
+});
+
+$("#carousel1").empty();
+db.collection("recommended").get().then((querySnapshot) => {
+  querySnapshot.forEach((doc) => {
+    var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
+        <div class="thumbnail" style="background-image: url('${doc.data().photoURL}')">
+        </div>
+        <div class="recomended_item_title" id="item1_${doc.data().id}">${doc.data().name}</div>
+    </ons-carousel-item>`
+    $("#carousel1").append(item);
+  });
+});
+
+$("#carousel2").empty();
+db.collection("list").get().then((querySnapshot) => {
+  querySnapshot.forEach((doc) => {
+    var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
+        <div class="thumbnail" style="background-image: url('${doc.data().photoURL}')">
+        </div>
+        <div class="recomended_item_title" id="item1_${doc.data().id}">${doc.data().name}</div>
+    </ons-carousel-item>`
+    $("#carousel2").append(item);
+  });
+});
+
+$("#carousel").empty();
+db.collection("complete").get().then((querySnapshot) => {
+  querySnapshot.forEach((doc) => {
+    var item = `<ons-carousel-item modifier="nodivider" id="item${doc.data().id}" class="recomended_item">
+        <div class="thumbnail" style="background-image: url('${doc.data().photoURL}')">
+        </div>
+        <div class="recomended_item_title" id="item1_${doc.data().id}">${doc.data().name}</div>
+    </ons-carousel-item>`
+    $("#carousel").append(item);
+  });
 });
