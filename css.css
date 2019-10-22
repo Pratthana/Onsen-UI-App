@@ -189,146 +189,156 @@
 }
 
 
-/* ----------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
 
-#resturanmenu{
+#resturantmenupage .page__background{
    background: #EB3349; 
    background: -webkit-linear-gradient(to right, #F45C43, #EB3349); 
-   background: linear-gradient(to right, #F45C43, #EB3349);  
- }
-
-#card_menu{
-   margin-top: 11%;
+   background: linear-gradient(to right, #F45C43, #EB3349); 
 }
 
-.title_menu >h1 {
+#card_menu{
+   margin-top: 3%;
+}
+
+.menu >h6 {
+   margin-top: 5%;
    text-align: center;
-   font-family: 'Chilanka', cursive;
-   font-size: 18px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 20px;
    color: rgb(19, 14, 14);
 }
 
-.title_menu >p {
+.menu >p {
+   margin-top: -20%;
    text-align: center;
-   font-family: 'Chilanka', cursive;
-   font-size: 15px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 12px;
    color: rgb(126, 125, 125);
 }
 
 .start{
    text-align: center;
-   font-family: 'Chilanka', cursive;
-   font-size: 15px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 18px;
    background: #ffc3a0;
    
 }
 
-.one_menu >h1 {
+.one_menu >h6 {
+   margin-top: 2%;
    text-align: left;
-   font-family: 'Chilanka', cursive;
-   font-size: 13px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
    color: rgb(3, 3, 3);
 }
 
 .one_menu >p {
+   margin-top: -8%;
    text-align: left;
-   font-family: 'Chilanka', cursive;
-   font-size: 11px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 13px;
    color: #40d0e0;
 }
 
 
-.two_menu >h1 {
+.two_menu >h6 {
+   margin-top: 2%;
    text-align: left;
-   font-family: 'Chilanka', cursive;
-   font-size: 13px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
    color: rgb(14, 11, 11);
 }
 
 .two_menu >p {
+   margin-top: -7%;
    text-align: left;
-   font-family: 'Chilanka', cursive;
-   font-size: 11px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 13px;
    color: #ff8c00;
 }
 
-.three_menu >h1 {
+.three_menu >h6 {
+   margin-top: 2%;
    text-align: left;
-   font-family: 'Chilanka', cursive;
-   font-size: 13px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
    color: rgb(14, 11, 11);
 }
 
 .three_menu >p {
+   margin-top: -7%;
    text-align: left;
-   font-family: 'Chilanka', cursive;
-   font-size: 11px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 13px;
    color: #ff0080;
 }
 
 .mains{
    text-align: center;
-   font-family: 'Chilanka', cursive;
-   font-size: 15px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 18px;
    background: #ffafbd;
 }
 
-.four_menu >h1 {
+.four_menu >h6 {
+   margin-top: 2%;
    text-align: left;
-   font-family: 'Chilanka', cursive;
-   font-size: 13px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
    color: rgb(3, 3, 3);
 }
 
 .four_menu >p {
+   margin-top: -7%;
    text-align: left;
-   font-family: 'Chilanka', cursive;
-   font-size: 11px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 13px;
    color: #40d0e0;
 }
 
 
-.five_menu >h1 {
+.five_menu >h6 {
+   margin-top: 2%;
    text-align: left;
-   font-family: 'Chilanka', cursive;
-   font-size: 13px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
    color: rgb(14, 11, 11);
 }
 
 .five_menu >p {
+   margin-top: -7%;
    text-align: left;
-   font-family: 'Chilanka', cursive;
-   font-size: 11px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 13px;
    color: #ff8c00;
 }
 
-.six_menu >h1 {
+.six_menu >h6 {
+   margin-top: 2%;
    text-align: left;
-   font-family: 'Chilanka', cursive;
-   font-size: 13px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
    color: rgb(14, 11, 11);
 }
 
 .six_menu >p {
+   margin-top: -7%;
    text-align: left;
-   font-family: 'Chilanka', cursive;
-   font-size: 11px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 13px;
    color: #ff0080;
 }
 
-#drinks{
-   font-family: 'Chilanka', cursive;
-   font-size: 18px;
-   color: rgb(255, 254, 254);
-   background: #BE93C5;
+#order{
+   width: 100%;
+   height: 3%;
+   text-align: center;
+   font-family: 'Comfortaa', cursive;
+   background : #072a24;
+
 }
 
-#desserts{
-   font-family: 'Chilanka', cursive;
-   font-size: 18px;
-   color: rgb(255, 255, 255);
-   background: #7bc6cc;
-}
 
 /* ----------------------------------------------------- */
 
