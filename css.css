@@ -20,7 +20,7 @@
     text-align: center;
     font-family: 'Comfortaa', cursive;
     font-size: 18px;
-    color: rgb(8, 7, 7);
+    color: rgb(87, 86, 86);
  }
 
  #forgot{
@@ -44,9 +44,9 @@
 
   }
 
-  /* ----------------------------------------------------- */
+  /* ------------------------------------------------------------------------------------- */
 
-  #register .page__background{
+  #registerpage .page__background{
    background: #833ab4; 
    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
@@ -54,31 +54,39 @@
 }
 
   #card_re{
-    margin-top: 1%;
+    margin-top: 10%;
 }
 
-  .title_re >h3 {
+  .title_re >h1 {
+    
     text-align: center;
-    font-family: 'Chilanka', cursive;
+    font-family: 'Comfortaa', cursive;
     font-size: 28px;
     color: rgb(19, 14, 14);
  }
  
  .title_re >p {
     text-align: center;
-    font-family: 'Chilanka', cursive;
-    font-size: 13px;
-    color: rgb(126, 125, 125);
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    color: rgb(87, 86, 86);
  }
    
-  #large--cta_re{
-   font-family: 'Chilanka', cursive;
+  #register{
+   font-family: 'Comfortaa', cursive;
    background: #0f456e;
   }
 
- /* ----------------------------------------------------- */
+  #backlogin{
+   text-align: center;
+   font-family: 'Comfortaa', cursive;
+   font-size: 18px;
+   color: rgb(187, 21, 21);
+  }
 
- #foodcategory{
+ /* ----------------------------------------------------------------------------------- */
+
+ #registerpage .page__background{
    background: #EB3349; 
    background: -webkit-linear-gradient(to right, #F45C43, #EB3349); 
    background: linear-gradient(to right, #F45C43, #EB3349); 
