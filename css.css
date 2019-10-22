@@ -335,118 +335,129 @@
    height: 3%;
    text-align: center;
    font-family: 'Comfortaa', cursive;
-   background : #072a24;
+   background : #20b892;
+}
 
+#clear{
+   width: 100%;
+   height: 3%;
+   text-align: center;
+   font-family: 'Comfortaa', cursive;
+   background : #fc9038;
 }
 
 
-/* ----------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
 
-#resturanlist{
+#orderconfirmationpage .page__background{
    background: #EB3349; 
    background: -webkit-linear-gradient(to right, #F45C43, #EB3349); 
-   background: linear-gradient(to right, #F45C43, #EB3349);  
- }
-
- #card_order{
-   margin-top: 12%;
+   background: linear-gradient(to right, #F45C43, #EB3349); 
 }
 
-.title_order >h1 {
+ #card_order{
+   margin-top: 3%;
+}
+
+.order >h6 {
+   margin-top: 5%;
    text-align: center;
-   font-family: 'Chilanka', cursive;
+   font-family: 'Comfortaa', cursive;
    font-size: 20px;
    color: rgb(19, 14, 14);
 }
 
-.title_order >p {
+.order >p {
+   margin-top: -10%;
    text-align: center;
-   font-family: 'Chilanka', cursive;
-   font-size: 17px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
    color: rgb(126, 125, 125);
 }
 
-#one_order {
-   font-family: 'Chilanka', cursive;
-   font-size: 18px;
-   color: #959696;
+#exampleModalLabel{
+   margin-top: -5%;
+   text-align: center;
+   font-family: 'Comfortaa', cursive;
+   font-size: 20px;
+   color: rgb(82, 27, 18);
 }
 
-#two_order {
-   font-family: 'Chilanka', cursive;
-   font-size: 16px;
-   color: #40d0e0;
-}
-
-#three_order {
-   font-family: 'Chilanka', cursive;
-   font-size: 16px;
-   color: #ff8c00;
-}
-
-#four_order {
-   font-family: 'Chilanka', cursive;
-   font-size: 16px;
-   color: #ff0080;
-}
-
-#total{
-   font-family: 'Chilanka', cursive;
-   font-size: 16px;
-   background: #f7f0f0;
-   height: 10%;
-}
-
-#card_enter{
-   font-family: 'Chilanka', cursive;
-   font-size: 18px;
-   height: 10%;
+#ordernowbtn{
+   margin-top: 5%;
+   width: 100%;
+   height: 5%;
+   text-align: center;
+   font-family: 'Comfortaa', cursive;
+   font-size: 20px;
+   background : #fc9038;
 }
 
 .pay >p{
-   font-family: 'Chilanka', cursive;
-   font-size: 18px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 13px;
 }
 
 #credit{
-   padding: 2%;
-   font-family: 'Chilanka', cursive;
-   font-size: 15px;
-   color: #000;
+   padding: 1%;
+   font-family: 'Comfortaa', cursive;
+   font-size: 16px;
    background: #77a1d3;
 }
 
 #paypal{
-   padding: 2%;
-   font-family: 'Chilanka', cursive;
-   font-size: 15px;
-   color: #000;
+   padding: 1%;
+   font-family: 'Comfortaa', cursive;
+   font-size: 16px;
    background: #79cbca;
 }
 
 #cash{
-   padding: 2%;
-   font-family: 'Chilanka', cursive;
-   font-size: 15px;
-   color: #000;
+   padding: 1%;
+   font-family: 'Comfortaa', cursive;
+   font-size: 16px;
    background: #e684ac;
 }
-
 #cancle{
-   font-size: 15px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 18px;
    color: rgb(194, 34, 34)
 }
 
+.minus-item{
+   width:20px;
+   height:20px;
+   background-color: rgba(255, 41, 41, 0.822);
+   margin-right: 5px;
+}
+.plus-item{
+   width:20px;
+   height:20px;
+   background-color: rgba(29, 103, 201, 0.822);
+   margin-left: 5px;
+}
+.item-count {
+   width:80px;
+   height:40px;
+   margin-top: 15px;
+   font-size: 18px;
+   text-align: center;
+
+}
+.delete-item {
+   margin: 1px;
+}
 
 
-/* ................................................... */
+/*-----------------------------------------------------------------------------------------*/
 
-#completed{
+#completedpage .page__background{
    background: #EB3349; 
    background: -webkit-linear-gradient(to right, #F45C43, #EB3349); 
    background: linear-gradient(to right, #F45C43, #EB3349);
  
 }
+
 
 #card_com{
    margin-top: 40%;
@@ -456,7 +467,7 @@
 
  .title_com >h3 {
    text-align: center;
-   font-family: 'Chilanka', cursive;
+   font-family: 'Comfortaa', cursive;
    font-size: 35px;
    color: rgb(19, 14, 14);
 }
@@ -468,10 +479,7 @@
    display: table;
 }
 
-
-/* ................................................... */
-
-
+/*----------------------------------------------------------------------------------------*/
 
 .list1{
    width: 60px;
@@ -508,9 +516,7 @@
    display: table;
 }
 
-
-
-/* ................................................... */
+/*-----------------------------------------------------------------------------------------*/
 
 .recomended_item {
    padding-left: 10px;

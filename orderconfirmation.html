@@ -1,89 +1,76 @@
 <ons-page id="orderconfirmationpage">
-        <ons-toolbar>
-            <div class="left" id="backrm" class="back">
-                <ons-toolbar-button><img src="https://image.flaticon.com/icons/svg/126/126683.svg" alt="Onsen UI"
-                        style="width: 20%"></ons-toolbar-button>
+    <ons-toolbar>
+        <div class="left" id="backrm" class="back">
+            <ons-toolbar-button><img src="https://image.flaticon.com/icons/svg/126/126683.svg" alt="Onsen UI"
+                    style="width: 20%"></ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+
+    <center>
+        <ons-card id="card_order">
+            <div class="order">
+                <center>
+                    <ons-carousel-item modifier="nodivider" id="item555" class="list_item">
+                        <div class="list5"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/l1.jpg?alt=media&token=5151000c-ca55-47ae-9fab-3ee8ea3dd67a')">
+                        </div>
+                    </ons-carousel-item>
+                </center>
+                <h6>The Noodle</h6>
+                <p>Your order is below</p>
             </div>
-        </ons-toolbar>
-    
-        <center>
-            <ons-card id="card_order">
-                <div class="title_order">
-                    <center>
-                            <ons-carousel-item modifier="nodivider" id="item555" class="list_item">
-                                    <div class="list5"
-                                        style="background-image: url('https://firebasestorage.googleapis.com/v0/b/fooddeliveryapp-27a82.appspot.com/o/l1.jpg?alt=media&token=5151000c-ca55-47ae-9fab-3ee8ea3dd67a')">
-                                    </div>
-                                </ons-carousel-item>
-                    </center>
-                    <h1>The Noodle</h1>
-                    <p>Your order is below</p>
+        </ons-card>
+    </center>
+
+    <ons-card id="card_col">
+
+        <ons-row class="row justify-content-center">
+
+            <ons-card style="width: 99%">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="text-align: center">CART</h5>
+                </div>
+
+                <div class="modal-body">
+                    <table class="show-cart table">
+                    </table>
+                    <div style="text-align: center">
+                        <ons-button class="ordernowbtn" id="ordernowbtn">
+                            <div>Total Price : <span class="total-cart"></span> ฿</div>
+                    </div>
+                    </ons-button>
                 </div>
             </ons-card>
-        </center>
-    
-        <ons-card id="card_col">
-    
-            <ons-row class="row justify-content-center">
-                <!-- <ons-col class="col-3" width="25%"></ons-col> -->
-                <ons-col>
-                    <ons-card style="width: 99%">
-        
-        
-                        <!-- <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content"> -->
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel" style="text-align: center">CART</h5>
-        
-                            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button> -->
-                        </div>
-                        <div class="modal-body">
-                            <table class="show-cart table">
-        
-                            </table>
-    
-                        <div style="text-align: center">
-                            <ons-button class="ordernowbtn" style="background-color:blueviolet"> <div>Total Price : <span class="total-cart"></span> ฿</div>
-                            </div></ons-button>
-                        </div>
-                    
-                    </ons-card>
-        
-        
-                </ons-col>
-        
-            </ons-row>
-    
-        
-    
-            <div class="pay" style="text-align: center">
-                <p>Pay via</p>
-            </div>
-    
-            <div style="text-align: center" class="content-padded" ng-controller="ButtonsController">
-                <ons-button id="credit" class="credit" modifier="material" style="width: 45%">
-                    <ons-ripple></ons-ripple>
-                    Credit Card
-                </ons-button>
-    
-                <ons-button id="paypal" class="paypal" modifier="material" style="width: 45%">
-                    <ons-ripple></ons-ripple>
-                    Paypal
-                </ons-button>
-    
-                <ons-button id="cash" class="cash" modifier="material" style="width: 92%">
-                    <ons-ripple></ons-ripple>
-                    Cash On Delivery
-                </ons-button>
-            </div>
-    
-            <div class="more">
-                <ons-button id="cancle" class="cancle" modifier="quiet">
-                    <p>CANCLE...</p>
-                </ons-button>
-            </div>
-    
-        </ons-card>
-    
-        </ons-page>
+        </ons-row>
+
+    <div class="pay" style="text-align: center">
+        <p>Pay via</p>
+    </div>
+
+    <div style="text-align: center" class="content-padded" ng-controller="ButtonsController">
+        <ons-button id="credit" class="credit" modifier="material" style="width: 45%">
+            <ons-ripple></ons-ripple>
+            Credit Card
+        </ons-button>
+
+        <ons-button id="paypal" class="paypal" modifier="material" style="width: 45%">
+            <ons-ripple></ons-ripple>
+            Paypal
+        </ons-button>
+
+        <ons-button id="cash" class="cash" modifier="material" style="width: 92%">
+            <ons-ripple></ons-ripple>
+            Cash On Delivery
+        </ons-button>
+    </div>
+
+    <div class="more">
+        <ons-button id="cancle" class="cancle" modifier="quiet">
+            <p>CANCLE...</p>
+        </ons-button>
+    </div>
+
+    </ons-card>
+
+</ons-page>

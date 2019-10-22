@@ -100,6 +100,14 @@ document.addEventListener('init', function (event) {
     });
   }
 
+  if (page.id === 'completedpage') {
+    console.log("completedpage");
+
+    $("#completebtn").click(function () {
+      content.load('foodcategory.html');
+    });
+  }
+
   if (page.id === 'loginpage') {
     console.log("loginpage");
     
@@ -343,12 +351,15 @@ document.addEventListener('init', function (event) {
       output += "<tr>" +
         "<td>" + cartArray[i].name + "</td>" +
         "<td>(" + cartArray[i].price + ")</td>" +
-        "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>" +
+        "<tr>"+
+        "<td ><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>" +
         "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>" +
         "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>" +
         "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>" +
+        
         " = " +
         "<td>" + cartArray[i].total + "</td>" +
+        "<tr>"+
         "</tr>";
     }
     $('.show-cart').html(output);
@@ -389,6 +400,7 @@ document.addEventListener('init', function (event) {
   displayCart();
 
 });
+
 
 $("#carousel1").empty();
 db.collection("recommended").get().then((querySnapshot) => {
