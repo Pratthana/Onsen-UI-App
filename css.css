@@ -1,4 +1,4 @@
-#index .page__background{
+#loginpage .page__background{
    background: #833ab4; 
    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); 
@@ -11,50 +11,36 @@
 
  .content >h1 {
     text-align: center;
-    font-family: 'Chilanka', cursive;
+    font-family: 'Comfortaa', cursive;
     font-size: 28px;
-    color: rgb(19, 14, 14);
+    color: rgb(8, 3, 3);
  }
 
  .content >p {
     text-align: center;
-    font-family: 'Chilanka', cursive;
-    font-size: 15px;
-    color: rgb(126, 125, 125);
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    color: rgb(8, 7, 7);
  }
 
  #forgot{
    text-align: center;
-   font-family: 'Chilanka', cursive;
-   font-size: 13px;
-   color: #072a24;
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
+   color: #020202;
  }
 
  #sing{
    text-align: center;
-   font-family: 'Chilanka', cursive;
-   font-size: 13px;
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
    color: #e93737; 
  }
 
  #login {
    text-align: center;
-   font-family: 'Chilanka', cursive;
+   font-family: 'Comfortaa', cursive;
    background : #072a24;
-
-  }
-
- #outline_login {
-   text-align: center;
-   font-family: 'Chilanka', cursive;
-   background : #0f456e;
-
-  }
- 
-  #outline1_login {
-   text-align: center;
-   font-family: 'Chilanka', cursive;
-   background : #fe929f;
 
   }
 

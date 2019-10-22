@@ -1,42 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<ons-page id="loginpage">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Food Delivery App</title>
+  <ons-card id="card">
+    <div class="content">
+      <center>
+        <img src="https://image.flaticon.com/icons/svg/1147/1147907.svg" alt="Onsen UI" style="width: 35%">
+      </center>
+      <h1>LOGIN</h1>
+      <p>Insert your email and password to login</p>
+    </div>
 
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
-    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+    <div class="content">
+      <ons-list>
+        <span>
+          <div style="padding: 1%" align='center'>
+            <input class="text-input" id="email" placeholder="Email" type="text">
+          </div>
+          <br />
+          <div align='center'>
+            <input class="text-input" id="password" placeholder="Password" type="password">
+          </div>
+        </span>
+      </ons-list>
 
-    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
-</head>
+      <ons-row>
+        <ons-col class="one_index" width="80%">
+          <br>
+          <ons-button id="forgot" modifier="quiet">
+            Forgot Password ??
+          </ons-button>
+          |
+          <ons-button id="sing" modifier="quiet">
+            Sign up
+        </ons-col>
 
-<body>
-<!-- First navigation component: Navigator. This will remain always on top of the app. -->
-<ons-navigator id="myNavigator" page="splitter.html">
-</ons-navigator>
+        <ons-col width="20%">
+          <br>
+          <ons-button id="login">Login</ons-button>
 
+        </ons-col>
+      </ons-row>
 
-<!-- Second navigation component: Splitter. This will disappear if the first component changes its content. -->
-<template id="splitter.html">
-  <ons-page>
-    <ons-splitter id="mySplitter">
-      <ons-splitter-content page="orderconfirmation.html" id="content">
-      </ons-splitter-content>
-    </ons-splitter>
-  </ons-page>
-</template>
+      <br>
 
-    <script src="lib/onsen/js/onsenui.js"></script>
-    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-auth.js"></script>
-    <script src="js/app.js"></script>
+      <ons-row>
+        <ons-col width="50%">
+          <ons-card>
+            <center>
+              <ons-toolbar-button><img src="https://image.flaticon.com/icons/svg/185/185981.svg" alt="Onsen UI"
+                  style="width: 35%"></ons-toolbar-button>
+            </center>
+          </ons-card>
+        </ons-col>
 
-</body>
+        <ons-col width="50%">
+          <ons-card>
+            <center>
+              <ons-toolbar-button><img id="gbtn" src="https://image.flaticon.com/icons/svg/270/270021.svg"
+                  alt="Onsen UI" style="width: 35%"></ons-toolbar-button>
+            </center>
+          </ons-card>
+        </ons-col>
+      </ons-row>
 
-</html>
+    </div>
+  </ons-card>
+
+</ons-page>
